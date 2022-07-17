@@ -1,0 +1,120 @@
+button:focus {
+  outline: none;
+}
+
+.WT_EXT_ROOT {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 250px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.WT_EXT_ROOT.hidden {
+  transform: translateX(-250px);
+}
+
+.WT_EXT_hiddenBtn {
+  width: 20px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.WT_EXT_hiddenBtn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.WT_EXT_MAIN {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.WT_EXT_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.WT_EXT_ep {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.WT_EXT_toonListArea {
+  position: fixed;
+  left: 20px;
+  top: 130px;
+  width: 250px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.WT_EXT_toonListArea.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.WT_EXT_toonListArea.rollup {
+  height: 20px;
+}
+
+.WT_EXT_toonListHiddenBtn {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 3;
+}
+.WT_EXT_toonListHiddenBtn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.WT_EXT_toonListUl {
+  width: 250px;
+  height: 580px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.WT_EXT_toonListUl::-webkit-scrollbar {
+  width: 10px;
+}
+.WT_EXT_toonListUl::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.WT_EXT_toonListLi {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.WT_EXT_toonListLi:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.WT_EXT_toonListLi .title {
+  font-size: 13px;
+  font-weight: 600;
+}
+.WT_EXT_toonListLi .author {
+  font-size: 9px;
+}
